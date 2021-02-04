@@ -73,7 +73,7 @@ jobs:
 
     - name: Create deployment slot
       run: |
-        az webapp deployment slot create --name popular-repos --resource-group pied-piper-inc --slot review-pr-${{ github.event.number }} --configuration-source popular-repos
+        az webapp deployment slot create --name popular-repos-app --resource-group popular-repos-resource-group --slot review-pr-${{ github.event.number }} --configuration-source popular-repos-app
 
     - name: Deploy popular repos
       uses: azure/webapps-deploy@v2
@@ -101,7 +101,7 @@ jobs:
       uses: azure/webapps-deploy@v2
       id: popular-repos-web
       with:
-        app-name: 'popular-repos'
+        app-name: 'popular-repos-app'
         images: '${{ secrets.AZURE_REGISTRY_NAME }}/popular-repos:${{ github.sha }}'
         slot-name: staging
 
@@ -111,7 +111,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: production
-      url: https://popular-repos.azurewebsites.net
+      url: https://popular-repos-app.azurewebsites.net
     needs: deploy_to_staging
     steps:
     - name: Azure login
@@ -121,5 +121,5 @@ jobs:
 
     - name: Swap staging to production
       run: |
-        az webapp deployment slot swap --name popular-repos --resource-group pied-piper-inc --slot staging --target-slot production
+        az webapp deployment slot swap --name popular-repos-app --resource-group popular-repos-resource-group --slot staging --target-slot production
 
