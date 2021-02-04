@@ -5,7 +5,7 @@ const api = require('../utils/api');
 function SelectLanguage(props) { 
 //  const languages = ['All', 'JavaScript', 'Java', 'CSharp', 'Python', 'Go', 'Rust'];
   
-  const languages = ['All', 'Java'];
+  const languages = ['All', 'CSharp'];
 
   return (
     <div>
