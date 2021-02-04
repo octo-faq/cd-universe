@@ -79,7 +79,7 @@ jobs:
       uses: azure/webapps-deploy@v2
       id: popular-repos-web
       with:
-        app-name: 'popular-repos'
+        app-name: 'popular-repos-app'
         images: '${{ secrets.AZURE_REGISTRY_NAME }}/popular-repos:${{ github.event.pull_request.head.sha }}'
         slot-name: review-pr-${{ github.event.number }}
 
