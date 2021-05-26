@@ -70,10 +70,11 @@ becomes
 #### Setup Repository Secrets
 
 In your copy of the repository, add the following secrets at the repository level:
-**AZURE_REGISTRY_NAME** - The value of **Login server** you noted down from step 12 of Creating a Container Registry, above
-**AZURE_REGISTRY_USER** -  The value of **Username** you noted down from step 12 of Creating a Container Registry, above
-**AZURE_REGISTRY_PASS** -  The password (**password** or **password2**) you noted down from step 12 of Creating a Container Registry, above
-**AZURE_SUBSCRIPTION_SECRET** - the contents of the JSON file you created in Step 4 of Create Credentials, above 
+
+- **AZURE_REGISTRY_NAME** - The value of **Login server** you noted down from step 12 of Creating a Container Registry, above
+- **AZURE_REGISTRY_USER** -  The value of **Username** you noted down from step 12 of Creating a Container Registry, above
+- **AZURE_REGISTRY_PASS** -  The password (**password** or **password2**) you noted down from step 12 of Creating a Container Registry, above
+- **AZURE_SUBSCRIPTION_SECRET** - the contents of the JSON file you created in Step 4 of Create Credentials, above 
 
 #### Setup Repository Secrets
 In your copy of the repository, add the following environments:
