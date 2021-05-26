@@ -26,11 +26,11 @@ From the Azure side you will need to setup the following:
 #### Create a Resource Group
 
 We are creating a new Resource Group to group/hold all the resources we need for this demo together, so for Resource Group, create a new Resource Group called `popular-repos-resource-group`.
-- Enter `popularReposRegistry` for the Name of the registry. 
+- Enter `popular-repos-resource-group` for the Name of the resource group. 
 - Note the Region to keep everything together with the App Service Plan you will soon create.
 - Click on **Review + create**.
 - Click on **Create**.
-- You should see a message saying "Your deployment is complete".
+- You should see a message at the top right hand side saying "Resource group created".
 
 
 https://user-images.githubusercontent.com/5361987/119602685-06196500-be2f-11eb-9e79-9ebc4d4ba9e0.mp4
