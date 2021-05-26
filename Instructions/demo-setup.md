@@ -50,7 +50,9 @@ First you have to create a container registry (where we are going to host our co
 - Note down the Login server, the Username and one of the two passwords (**password** or **password2**) for use later on in configuration and our secrets.
 - Click on **Home**.
 
-https://user-images.githubusercontent.com/5361987/119609091-5813b800-be3a-11eb-8de1-54c43c2e4465.mp4
+https://user-images.githubusercontent.com/5361987/119612723-919af200-be3f-11eb-87aa-e133864978b0.mp4
+
+
 
 #### Create an App Service Plan
 
