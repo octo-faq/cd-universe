@@ -31,23 +31,21 @@ We are creating a new Resource Group to group/hold all the resources we need for
 - Click on **Review + create**.
 - Click on **Create**.
 - You should see a message at the top right hand side saying "Resource group created".
-
+- Click on **Home**.
 
 https://user-images.githubusercontent.com/5361987/119602685-06196500-be2f-11eb-9e79-9ebc4d4ba9e0.mp4
-
-
 
 #### Create a container registry
 
 First you have to create a container registry (where we are going to host our container image), as well as create access keys that you can store in GitHub secrets to use during the workflow
 - Click on **Create a resource**.
 - Find and select **Container Registry**. 
-- Choose the **Resource Group** created in the previous section
-- Click on **Create**
-- In the Settings section, select Access keys
-- Turn on Admin user
-- Note down the Login server, the Username and one of the two passwords (**password** or **password2**) for use later on in configuration and our secrets
-- Click on **Home**
+- Choose the **Resource Group** created in the previous section `popular-repos-resource-group`.
+- Click on **Create**.
+- In the Settings section, select Access keys.
+- Turn on Admin user.
+- Note down the Login server, the Username and one of the two passwords (**password** or **password2**) for use later on in configuration and our secrets.
+- Click on **Home**.
 
 #### Create an App Service Plan
 
