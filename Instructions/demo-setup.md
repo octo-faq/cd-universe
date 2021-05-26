@@ -7,7 +7,7 @@
 - You have a personal account that you have applied the MS Visual Studio Enterprise Subscription FTE Staff Benefit licence to. If you have not done so already, do the following:
   - Create a personal account at https://azure.microsoft.com/en-us/free/ - remember the email address for that account
   - Log in with your MSFT corporate credentials at https://my.visualstudio.com (eg dafiguci@microsoft.com)
-  - Link your FTE allowance with your personal account created above
+  - Link your FTE allowance with your personal account created above: it might be worth it to apply for the Visual Studio subscription via https://my.visualstudio.com/Benefits. When hitting that page use your Microsoft credentials, but the coupon is applied to your personal account. Follow the instructions carefully.
 
 
 ## Azure Setup
