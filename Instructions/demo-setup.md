@@ -12,6 +12,93 @@
 
 ## Azure Setup
 
+From the Azure side you will need to setup the following:
+- An Azure Resource Group: https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups
+- An Azure Container registry: https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal
+- An Azure App Service Plan: https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage
+- Registry login credentials: https://github.com/azure/login#configure-deployment-credentials
+
+### Step By Step:
+
+- Log in to https://portal.azure.com
+- If you are prompted to Pick an account to continue to Microsoft Azure, choose the email address / personal account that has the MS Visual Studio Enterprise Subscription Staff Benefit applied
+
+#### Create a Resource Group
+
+We are creating a new Resource Group to group/hold all the resources we need for this demo together, so for Resource Group, create a new Resource Group called `popular-repos-resource-group`.
+- Enter `popularReposRegistry` for the Name of the registry. 
+- Note the Region to keep everything together with the App Service Plan you will soon create.
+- Click on **Review + create**.
+- Click on **Create**.
+- You should see a message saying "Your deployment is complete".
+
+#### Create a container registry
+
+First you have to create a container registry (where we are going to host our container image), as well as create access keys that you can store in GitHub secrets to use during the workflow
+- Click on **Create a resource**.
+- Find and select **Container Registry**. 
+- Choose the **Resource Group** created in the previous section
+- Click on **Create**
+- In the Settings section, select Access keys
+- Turn on Admin user
+- Note down the Login server, the Username and one of the two passwords (**password** or **password2**) for use later on in configuration and our secrets
+- Click on **Home**
+
+#### Create an App Service Plan
+
+- Click on **Create a resource**.
+- Find and select **App Service Plan**.
+- Click on **Create**.
+- For Resource Group, choose  `popular-repos-resource-group`, which you created in the previous section.
+- For the Name use `popular-repos`.
+- Use Linux for the Operating System.
+- For Region use the region you chose when creating the container registry.
+- Keep the default Sku and size.
+- Click on **Review + create**.
+- Click on **Create**.
+- You should see a message saying "Your deployment is complete".
+- Click on **Home**.
+
+#### Create a WebApp
+
+Here you will create a Web App with a production slot, give that production slot the credentials for pulling the container from the registry and create a staging slot with a copy of the production slot's configuration. Whilst the demo deploys to production by swapping slots, this way we ensure that both slots have the credentials required, so that staging will always have the credentials to pull the container.
+- Click on Create a resource
+- Find and select Web App
+- Click on Create
+- For Resource Group, use the same resource group you used to create the registry
+- For the Name, use popular-repos-app
+- For  Publish, select Docker Container
+- Use Linux for the Operating System
+- Select the region the App Service Plan you created above  is hosted in
+- Select the App Server Plan you created above
+- Keep the default Sku and size
+- Click on **Review + create**.
+- Click on **Create**.
+- You should see a message saying "Your deployment is complete"
+- Click on **Home**.
+- Click on **App Services**.
+- Click on the app you just created - `popular-repos-app`.
+- Click on **Deployment Center**.
+- Click on **Settings**.
+- For Container Type, select Single Container.
+- For Registry source select Private Registry.
+- For Server URL, enter the value of Login server you noted down from when you created the Container Registry, above.
+- For Username, enter the value of Username you noted down from when you created the Container Registry, above.
+- For Password, enter the value of the password (password or password2) you noted down from when you created the Container Registry, above.
+- For Full Image Name and Tag, use the name of the App Service you created (popular-repos). No tag needed.
+- Leave Startup File blank and Continuous deployment Off.
+- Click on Save.
+- Click on Deployment slots.
+- Click on + Add Slot.
+
+	- Enter the Name staging.
+	- Clone settings from popular-repos-app.
+	- Click on Add.
+
+
+
+
+
 
 ## GitHub Setup
 
