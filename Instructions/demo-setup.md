@@ -16,7 +16,7 @@ From the Azure side you will need to setup the following:
 - An [Azure Resource Group](#create-a-resource-group) Resource Group: https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups
 - An [Azure Container registry](#create-a-container-registry): https://docs.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal
 - An [Azure App Service Plan](#create-an-app-service-plan): https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage
-- Registry login credentials: https://github.com/azure/login#configure-deployment-credentials
+- [Registry login credentials](#setup-credentials): https://github.com/azure/login#configure-deployment-credentials
 
 ### Step By Step:
 
