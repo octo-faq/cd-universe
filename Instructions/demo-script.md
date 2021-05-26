@@ -81,7 +81,7 @@ https://user-images.githubusercontent.com/5361987/119584925-fee15f80-be0c-11eb-9
                - Wait for the **Deploy Production** job to start. Highlight when it does
                - Scroll down and show the Audit log for Events
                    
-           - Show the app in production  - display the site in a private/incognito window (See Issues at the top of this document)
+           - Show the app in production  - display the site in a private/incognito window.
 
 ## Conclusion/Final Remarks
 - We feel this brings the capability to allow for more rich and flexible continuous delivery (CD) workflows for GitHub Actions
