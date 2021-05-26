@@ -115,6 +115,15 @@ https://user-images.githubusercontent.com/5361987/119584925-fee15f80-be0c-11eb-9
                    
            - Show the app in production  - display the site in a private/incognito window.
 
+## Useful Browser Tabs
+- The application in **production**
+- Repository's **Code** Tab
+- Repository's **Actions** Tab
+- Your notifications page in GitHub to show when you have been requested to review a environment deployment (eg **Staging**)
+
+
+
+
 ## Conclusion/Final Remarks
 - We feel this brings the capability to allow for more rich and flexible continuous delivery (CD) workflows for GitHub Actions
 - We have a lot of plans to enrich this in future, such as more protection rules for environments.
