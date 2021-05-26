@@ -61,9 +61,27 @@ https://user-images.githubusercontent.com/5361987/119584925-fee15f80-be0c-11eb-9
 
       - That will take you to the web page for that particular deployment and describe that users can see the Rust option showing.
 
+     e. Go back to the Pull Request view and click on **Merge Pull Request**
+      - Note that the workflow will kick off again, but will take a different path
+      - Show the settings tab and show the Environment secret
+     
+           - Note that it has the same name (**AZURE_SUBSCRIPTION_SECRET**) as the repository secret, but is only accessed when the workflow is running in the context of the particular environment - in this case, Production.
+            - Click on **Manage Environment** - show the secret and the protection rules.
+            - Explain the wait timer
 
-
-
+      - By now the deployment to staging should have taken place. Go to the **Actions** tab and show the visualization for the current workflow.
+      
+           - Discuss the useful info - like how much time has passed since deployment to staging, how much time is left on a wait timer, etc.
+           - A link to the Staging URL that was just published - display the site in a private/incognito window (See Issues at the top of this document)
+           - Point out the **Review deployments** button on the visualizer (if you were requested)
+           - Also show your **Notifications** browser tab - there are also notifications coming to the mobile app and the Slack integration
+           - Go back to the **Actions** workflow visualization and click on **Review deployment**
+                   
+               - Click on **Production** environment checkbox, add a comment and click on **Approve and deploy**
+               - Wait for the **Deploy Production** job to start. Highlight when it does
+               - Scroll down and show the Audit log for Events
+                   
+           - Show the app in production  - display the site in a private/incognito window (See Issues at the top of this document)
 
 ## Conclusion/Final Remarks
 - We feel this brings the capability to allow for more rich and flexible continuous delivery (CD) workflows for GitHub Actions
