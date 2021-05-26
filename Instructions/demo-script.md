@@ -26,12 +26,32 @@ Separation of concerns - read access to repo is required - this means that the p
 - Track progress of complex workflows
 - Pipeline style deployments, matrices, etc
 
+## Known Issues
+
+Currently there is a reproducible issue with Chrome and Safari, in that once:
+- a deployment to a the Web App Deployment slot in Azure has occurred and
+- you have opened that slot's site in a non-private/incognito window
+
+if you try to reload in that window, or try and open it in another non-private/incognito window - you are getting the previous cached version of the site from somewhere.
+
+If you open an updated slot's site in a private/incognito window, then you see the updated versions.
+
+You also cannot reload a deployment slot's site in a private/incognito window - you have to close that and open another one to see the updated slot's site.
+This happens even though a deploy to production is actually a swap slot action. You still have to open the production slot's sites in private/incognito windows to see the changes.
+
+After a period of time, the non-private windows will finally load the new version of the slot's site - but we do not know how long that timeout is.
+
+This does not occur with Firefox, with changes displaying when reloading the window.
+
+
 ## Tour the demo application
+
 - Switch to the Browser tab showing the application in production
 - Lists popular repos by language
 - Note that **Rust** is not covered - we want to change that
 
 ## Useful Browser Tabs
+
 - The application in **production**
 - Repository's **Code** Tab
 - Repository's **Actions** Tab
