@@ -39,6 +39,7 @@ https://user-images.githubusercontent.com/5361987/119602685-06196500-be2f-11eb-9
 
 First you have to create a container registry (where we are going to host our container image), as well as create access keys that you can store in GitHub secrets to use during the workflow
 - Click on **Create a resource**.
+- Click on **Containers** under Category.
 - Find and select **Container Registry**. 
 - Choose the **Resource Group** created in the previous section `popular-repos-resource-group`.
 - Click on **Create**.
@@ -46,6 +47,8 @@ First you have to create a container registry (where we are going to host our co
 - Turn on Admin user.
 - Note down the Login server, the Username and one of the two passwords (**password** or **password2**) for use later on in configuration and our secrets.
 - Click on **Home**.
+
+https://user-images.githubusercontent.com/5361987/119609091-5813b800-be3a-11eb-8de1-54c43c2e4465.mp4
 
 #### Create an App Service Plan
 
