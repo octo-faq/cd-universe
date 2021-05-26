@@ -25,6 +25,11 @@
 - you can call the branch anything, `adding-rust` would be a good example
 - Create the pull request: You can use the same title `adding Rust (or removing Rust)`. 
 
+
+https://user-images.githubusercontent.com/5361987/119584925-fee15f80-be0c-11eb-989f-274493821d41.mp4
+
+
+
 ## Demo Narrative
 
 1. Firstly the **Deploy Site / Build (pull_request)** workflow will execute to build the application
