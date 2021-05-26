@@ -32,14 +32,15 @@ https://user-images.githubusercontent.com/5361987/119584925-fee15f80-be0c-11eb-9
 
 ## Demo Narrative
 
-1. Firstly the **Deploy Site / Build (pull_request)** workflow will execute to build the application
+1. Firstly the **Deploy Site / Build (pull_request)** workflow will execute to build the application.
 2. Show the workflow executing
  
-      a. Go to the browser tab showing the Actions tab of the repository and select the running job (you may need to refresh) - it will have the same name as the title of your pull request (in this demo script assuming adding Rust) and should be running the Deploy Site flow
+      a. Go to the browser tab showing the **Actions** tab of the repository and select the running job (you may need to refresh) - it will have the same name as the title of your pull request (in this demo script assuming `adding Rust`) and should be running the Deploy Site flow
       
      b. Show the visualization as the job starts executing, state that the job will take a branch depending on how things are configured for the workflow
      
-     c. Go to the browser tab showing the Code tab of the repository and drill down to .github ➡️ workflows ➡️ deploy.yml
+     c. Go to the browser tab showing the **Code** tab of the repository and drill down to  .github ➡️ workflows ➡️ deploy.yml
+
 
 
 
