@@ -26,6 +26,12 @@ Separation of concerns - read access to repo is required - this means that the p
 - Track progress of complex workflows
 - Pipeline style deployments, matrices, etc
 
+## Tour the demo application
+- Switch to the Browser tab showing the application in production
+- Lists popular repos by language
+- Note that **Rust** is not covered - we want to change that
+
+
 ## Make a quick code change to kick off the process
 
 - Go to Code tab of the repository
