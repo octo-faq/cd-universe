@@ -41,6 +41,7 @@ First you have to create a container registry (where we are going to host our co
 - Click on **Create a resource**.
 - Click on **Containers** under Category.
 - Find and select **Container Registry**. 
+- Enter **popularReposRegistryXXX** for the registry name (this name has to be unique across azure).
 - Choose the **Resource Group** created in the previous section `popular-repos-resource-group`.
 - Click on **Review + create**.
 - Click on **Create**.
