@@ -2,7 +2,7 @@
 
 ## Summary
 
-In this demonstration, we are trting to highlight 4 (ish) new capabilities added to GitHub Actions:
+In this demonstration, we are trying to highlight 4 (ish) new capabilities added to GitHub Actions:
 
 #### Environments
 - Keep track of history of deployments, eg staging, production, etc.
