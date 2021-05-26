@@ -21,7 +21,7 @@ From the Azure side you will need to setup the following:
 ### Step By Step:
 
 - Log in to https://portal.azure.com
-- If you are prompted to Pick an account to continue to Microsoft Azure, choose the email address / personal account that has the MS Visual Studio Enterprise Subscription Staff Benefit applied
+- If you are prompted to Pick an account to continue to Microsoft Azure, choose the email address / personal account that has the MS Visual Studio Enterprise Subscription Staff Benefit applied.
 
 #### Create a Resource Group
 
