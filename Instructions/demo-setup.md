@@ -95,8 +95,20 @@ Here you will create a Web App with a production slot, give that production slot
 	- Clone settings from popular-repos-app.
 	- Click on Add.
 
+#### Setup Credentials
+- Open the Azure Cloud Shell at https://shell.azure.com. Again choose the email address / personal account that has the MS Visual Studio Enterprise Subscription Staff Benefit applied if prompted
+- Choose **Bash** for the shell to run in if prompted
+- Enter the following (this example has wrapped to fit on the page. Use two lines - the first starting with az and the second with --scopes) :
 
+`az ad sp create-for-rbac --name "{sp-name}" --sdk-auth --role contributor \`
 
+`--scopes /subscriptions/{subscription-id}/resourceGroups/{resource-group}`
+
+- Replace fields in this command with the following:
+	- **{sp-name}** with a suitable name for your service principal, such as the name of the app itself. The name must be unique within your organization.
+	- **{subscription-id}** with the subscription ID you want to use (found in Subscriptions in portal)
+	- **{resource-group}** the resource group containing the web app.
+	- Copy the resultant JSON output into a file and keep it somewhere safe. You will use the contents of this for a secret a little later.
 
 
 
