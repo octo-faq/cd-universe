@@ -42,6 +42,7 @@ First you have to create a container registry (where we are going to host our co
 - Click on **Containers** under Category.
 - Find and select **Container Registry**. 
 - Choose the **Resource Group** created in the previous section `popular-repos-resource-group`.
+- Click on **Review + create**.
 - Click on **Create**.
 - In the Settings section, select Access keys.
 - Turn on Admin user.
