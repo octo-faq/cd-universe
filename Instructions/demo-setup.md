@@ -32,6 +32,11 @@ We are creating a new Resource Group to group/hold all the resources we need for
 - Click on **Create**.
 - You should see a message saying "Your deployment is complete".
 
+
+https://user-images.githubusercontent.com/5361987/119602685-06196500-be2f-11eb-9e79-9ebc4d4ba9e0.mp4
+
+
+
 #### Create a container registry
 
 First you have to create a container registry (where we are going to host our container image), as well as create access keys that you can store in GitHub secrets to use during the workflow
