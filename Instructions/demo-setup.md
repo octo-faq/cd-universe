@@ -52,8 +52,6 @@ First you have to create a container registry (where we are going to host our co
 
 https://user-images.githubusercontent.com/5361987/119612723-919af200-be3f-11eb-87aa-e133864978b0.mp4
 
-
-
 #### Create an App Service Plan
 
 - Click on **Create a resource**.
@@ -68,6 +66,8 @@ https://user-images.githubusercontent.com/5361987/119612723-919af200-be3f-11eb-8
 - Click on **Create**.
 - You should see a message saying "Your deployment is complete".
 - Click on **Home**.
+
+https://user-images.githubusercontent.com/5361987/119763286-940a5400-bef2-11eb-9db7-dc7341b1817c.mp4
 
 #### Create a WebApp
 
