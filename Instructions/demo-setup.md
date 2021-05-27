@@ -76,7 +76,7 @@ Here you will create a Web App with a production slot, give that production slot
 - Find and select **Web App**.
 - Click on **Create**.
 - For Resource Group, choose `popular-repos-resource-group`, which you created in the first section.
-- For the Name, use **popular-repos-app**.
+- For the Name, use **popular-repos-app-XXX** (it needs to be unique across Azure).
 - For  Publish, select **Docker Container**.
 - Use **Linux** for the Operating System.
 - Select the region the App Service Plan you created above  is hosted in.
