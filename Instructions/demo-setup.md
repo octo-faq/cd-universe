@@ -95,8 +95,8 @@ https://user-images.githubusercontent.com/5361987/119773527-1a7b6180-bf04-11eb-8
 - Click on **Settings**.
 - For Container Type, select **Single Container**.
 - For Registry source select **Private Registry**.
-- For Server URL, enter the value of Login server you noted down from when you created the Container Registry, above.
-- For Username, enter the value of Username you noted down from when you created the Container Registry, above.
+- For Server URL, enter the value of **Login server** you noted down from when you created the Container Registry, above.
+- For Username, enter the value of **Username** you noted down from when you created the Container Registry, above.
 - For Password, enter the value of the password (**password** or **password2**) you noted down from when you created the Container Registry, above.
 - For Full Image Name and Tag, use the name of the App Service you created `popular-repos`. No tag needed.
 - Leave Startup File blank and Continuous deployment Off.
