@@ -86,6 +86,9 @@ Here you will create a Web App with a production slot, give that production slot
 - Click on **Create**.
 - You should see a message saying "Your deployment is complete".
 - Click on **Home**.
+
+https://user-images.githubusercontent.com/5361987/119773527-1a7b6180-bf04-11eb-8b3c-bff24d2b593e.mp4
+
 - Click on **App Services**.
 - Click on the app you just created - `popular-repos-app`.
 - Click on **Deployment Center**.
