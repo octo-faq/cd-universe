@@ -108,6 +108,8 @@ https://user-images.githubusercontent.com/5361987/119773527-1a7b6180-bf04-11eb-8
 	- Clone settings from **popular-repos-app**.
 	- Click on **Add**.
 
+https://user-images.githubusercontent.com/5361987/119826204-21719680-bf3b-11eb-86ea-7e514978e39b.mp4
+
 #### Setup Credentials
 - Open the Azure Cloud Shell at https://shell.azure.com. Again choose the email address / personal account that has the MS Visual Studio Enterprise Subscription Staff Benefit applied if prompted
 - Choose **Bash** for the shell to run in if prompted
@@ -122,7 +124,6 @@ https://user-images.githubusercontent.com/5361987/119773527-1a7b6180-bf04-11eb-8
 	- **{subscription-id}** with the subscription ID you want to use (found in Subscriptions in portal)
 	- **{resource-group}** the resource group containing the web app.
 	- Copy the resultant JSON output into a file and keep it somewhere safe. You will use the contents of this for a secret a little later.
-
 
 
 ## GitHub Setup
