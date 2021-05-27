@@ -57,9 +57,9 @@ https://user-images.githubusercontent.com/5361987/119612723-919af200-be3f-11eb-8
 - Click on **Create a resource**.
 - Find and select **App Service Plan**.
 - Click on **Create**.
-- For Resource Group, choose  `popular-repos-resource-group`, which you created in the previous section.
+- For Resource Group, choose `popular-repos-resource-group`, which you created in the first section.
 - For the Name use `popular-repos`.
-- Use Linux for the Operating System.
+- Use **Linux** for the Operating System.
 - For Region use the region you chose when creating the container registry.
 - Keep the default Sku and size.
 - Click on **Review + create**.
@@ -72,38 +72,38 @@ https://user-images.githubusercontent.com/5361987/119763400-c87e1000-bef2-11eb-8
 #### Create a WebApp
 
 Here you will create a Web App with a production slot, give that production slot the credentials for pulling the container from the registry and create a staging slot with a copy of the production slot's configuration. Whilst the demo deploys to production by swapping slots, this way we ensure that both slots have the credentials required, so that staging will always have the credentials to pull the container.
-- Click on Create a resource
-- Find and select Web App
-- Click on Create
-- For Resource Group, use the same resource group you used to create the registry
-- For the Name, use popular-repos-app
-- For  Publish, select Docker Container
-- Use Linux for the Operating System
-- Select the region the App Service Plan you created above  is hosted in
-- Select the App Server Plan you created above
-- Keep the default Sku and size
+- Click on **Create a resource**
+- Find and select **Web App**.
+- Click on **Create**.
+- For Resource Group, choose `popular-repos-resource-group`, which you created in the first section.
+- For the Name, use **popular-repos-app**.
+- For  Publish, select **Docker Container**.
+- Use **Linux** for the Operating System.
+- Select the region the App Service Plan you created above  is hosted in.
+- Select the App Server Plan you created above  `popular-repos`.
+- Keep the default Sku and size.
 - Click on **Review + create**.
 - Click on **Create**.
-- You should see a message saying "Your deployment is complete"
+- You should see a message saying "Your deployment is complete".
 - Click on **Home**.
 - Click on **App Services**.
 - Click on the app you just created - `popular-repos-app`.
 - Click on **Deployment Center**.
 - Click on **Settings**.
-- For Container Type, select Single Container.
-- For Registry source select Private Registry.
+- For Container Type, select **Single Container**.
+- For Registry source select **Private Registry**.
 - For Server URL, enter the value of Login server you noted down from when you created the Container Registry, above.
 - For Username, enter the value of Username you noted down from when you created the Container Registry, above.
-- For Password, enter the value of the password (password or password2) you noted down from when you created the Container Registry, above.
-- For Full Image Name and Tag, use the name of the App Service you created (popular-repos). No tag needed.
+- For Password, enter the value of the password (**password** or **password2**) you noted down from when you created the Container Registry, above.
+- For Full Image Name and Tag, use the name of the App Service you created `popular-repos`. No tag needed.
 - Leave Startup File blank and Continuous deployment Off.
-- Click on Save.
-- Click on Deployment slots.
-- Click on + Add Slot.
+- Click on **Save**.
+- Click on **Deployment slots**.
+- Click on *+ Add Slot**.
 
-	- Enter the Name staging.
-	- Clone settings from popular-repos-app.
-	- Click on Add.
+	- Enter the Name **staging**.
+	- Clone settings from **popular-repos-app**.
+	- Click on **Add**.
 
 #### Setup Credentials
 - Open the Azure Cloud Shell at https://shell.azure.com. Again choose the email address / personal account that has the MS Visual Studio Enterprise Subscription Staff Benefit applied if prompted
