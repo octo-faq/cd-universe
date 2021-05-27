@@ -67,7 +67,7 @@ https://user-images.githubusercontent.com/5361987/119612723-919af200-be3f-11eb-8
 - You should see a message saying "Your deployment is complete".
 - Click on **Home**.
 
-https://user-images.githubusercontent.com/5361987/119763286-940a5400-bef2-11eb-9db7-dc7341b1817c.mp4
+https://user-images.githubusercontent.com/5361987/119763400-c87e1000-bef2-11eb-8fc7-679dd50ce496.mp4
 
 #### Create a WebApp
 
