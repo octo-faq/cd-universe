@@ -125,6 +125,7 @@ https://user-images.githubusercontent.com/5361987/119826204-21719680-bf3b-11eb-8
 	- **{resource-group}** the resource group containing the web app.
 	- Copy the resultant JSON output into a file and keep it somewhere safe. You will use the contents of this for a secret a little later.
 
+https://user-images.githubusercontent.com/5361987/119834133-060a8980-bf43-11eb-83ad-41ab956adf0a.mp4
 
 ## GitHub Setup
 
