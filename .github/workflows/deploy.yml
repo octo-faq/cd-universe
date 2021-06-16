@@ -79,7 +79,7 @@ jobs:
       uses: Azure/container-scan@v0.1
       with:
         # Docker image to scan
-        image-name: '${{ secrets.AZURE_REGISTRY_NAME }}/popular-repos:${{ github.event.pull_request.head.sha }}'
+        image-name: ${{ secrets.AZURE_REGISTRY_NAME }}/popular-repos:${{ github.event.pull_request.head.sha }}
         # Minimum severities of vulnerabilities to be displayed (UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL)
         # severity-threshold:
         # Username to authenticate to the Docker registry
