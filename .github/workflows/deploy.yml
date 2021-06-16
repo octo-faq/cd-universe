@@ -75,6 +75,22 @@ jobs:
       run: |
          az webapp deployment slot create --name cduniverse-ab --resource-group cd-universe-rg --slot review-pr-${{ github.event.number }} --configuration-source cduniverse-ab
 
+    - name: Container image scan
+      uses: Azure/container-scan@v0.1
+      with:
+        # Docker image to scan
+        image-name: '${{ secrets.AZURE_REGISTRY_NAME }}/popular-repos:${{ github.event.pull_request.head.sha }}'
+        # Minimum severities of vulnerabilities to be displayed (UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL)
+        severity-threshold: HIGH
+        # Username to authenticate to the Docker registry
+        # username: # optional
+        # Password to authenticate to the Docker registry
+        # password: # optional
+        # Github token
+        # token: # default is ${{ github.token }}
+        # Add additional checks to ensure the image is secure and follows best practices and CIS standards
+        run-quality-checks: 'True'
+
     - name: Deploy popular repos
       uses: azure/webapps-deploy@v2
       id: popular-repos-web
