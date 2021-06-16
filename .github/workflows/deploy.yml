@@ -73,13 +73,13 @@ jobs:
 
     - name: Create deployment slot
       run: |
-         az webapp deployment slot create --name popular-repos-app-show --resource-group popular-repos-resource-group --slot review-pr-${{ github.event.number }} --configuration-source popular-repos-app-show
+         az webapp deployment slot create --name cduniverse-ab --resource-group cd-universe-rg --slot review-pr-${{ github.event.number }} --configuration-source cduniverse-ab
 
     - name: Deploy popular repos
       uses: azure/webapps-deploy@v2
       id: popular-repos-web
       with:
-        app-name: 'popular-repos-app-show'
+        app-name: 'cduniverse-ab'
         images: '${{ secrets.AZURE_REGISTRY_NAME }}/popular-repos:${{ github.event.pull_request.head.sha }}'
         slot-name: review-pr-${{ github.event.number }}
 
@@ -111,7 +111,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: production
-      url: https://popular-repos-app-show.azurewebsites.net
+      url: https://cduniverse-ab.azurewebsites.net
     needs: deploy_to_staging
     steps:
     - name: Azure login
@@ -121,4 +121,4 @@ jobs:
 
     - name: Swap staging to production
       run: |
-        az webapp deployment slot swap --name popular-repos-app-show --resource-group popular-repos-resource-group --slot staging --target-slot production
+        az webapp deployment slot swap --name cduniverse-ab --resource-group cd-universe-rg --slot staging --target-slot production
